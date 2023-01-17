@@ -1,0 +1,54 @@
+@import "_variables";
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    ul {
+        list-style: none;    
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+/* BASE STYLES */
+
+body {
+    background-image: url('https://assets.hinge.co/Home_01_Hero_4cc39e87c6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/* NORMAL STYLES */
+.header {
+    border: black solid 1px;
+    background-color: rgba($color: #000000, $alpha: 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    padding: 0 30px;
+
+    &-left {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    .nav {
+        display: flex;
+        column-gap: 40px;
+
+        &-item {
+            color: $font-light;
+            font-size: 20px;
+        }
+    }
+}
+
