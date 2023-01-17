@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="SASS/styles.css">
     <script
       src="https://kit.fontawesome.com/cb3859e059.js"
       crossorigin="anonymous"
@@ -12,17 +12,31 @@
     <title>Stay Away Hotpot</title>
   </head>
   <body>
-    <nav>
-      <img src="" alt="Logo" />
-      <span><i class="fa-solid fa-magnifying-glass"></i>Search</span>
-      <ul>
-        <li>Home</li>
-        <li>Shop</li>
-        <li>About</li>
-      </ul>
-      <i class="fa-solid fa-user"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
-    </nav>
+    <header class="header">
+      <div class="header-left">
+        <!-- <img src="" alt="Logo" /> -->
+        <span>StayAway HotPot</span>
+        <span><i class="fa-solid fa-magnifying-glass"></i>Search</span>
+      </div>
+
+      <nav class="header-middle">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
 
     <main>
       <!-- First Page Element-->
