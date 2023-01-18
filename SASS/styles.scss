@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 
   ul {
     list-style: none;
@@ -209,7 +210,7 @@ body {
 }
 //////////////////////////
 .content {
-  width: 400px;
+  width: 600px;
   height: 250px;
   &:nth-child(1) {
     background-color: $light-color;
@@ -236,7 +237,7 @@ body {
 .slideshow {
   display: flex;
   -webkit-animation: loop-slide 20s infinite linear 1s both;
-  animation: loop-slide 18s infinite linear 1s both;
+  animation: loop-slide 20s infinite linear 1s both;
 }
 @-webkit-keyframes loop-slide {
   from {
@@ -261,9 +262,11 @@ body {
 }
 /* hover action */
 .content-hover {
-  padding: 20px 10px;
+  padding: 20px 40px;
+  margin: 0 50px;
   color: $font-dark;
   // color: $font-light;
+  font-size: 20px;
   display: flex;
   align-items: flex-start;
 
@@ -597,3 +600,4 @@ h1 {
     border-color: transparent $box-color transparent transparent;
   }
 }
+
