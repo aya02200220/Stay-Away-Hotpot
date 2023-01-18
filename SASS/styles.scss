@@ -59,34 +59,34 @@ body {
     column-gap: 30px;
 
     &-logo {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
     form {
-        margin-left: 50px;
-        background: $light-color;
-        width: 200px;
-        height: 30px;
-        display: flex;
+      margin-left: 50px;
+      background: $light-color;
+      width: 200px;
+      height: 30px;
+      display: flex;
 
-        input {
-            flex: 1;
-            border: none;
-            outline: none;
-            // border-radius: 25px;
-        }
+      input {
+        flex: 1;
+        border: none;
+        outline: none;
+        // border-radius: 25px;
+      }
 
-        button {
-            display: none;
-        }
+      button {
+        display: none;
+      }
 
-        .fa-magnifying-glass {
-            align-self: center;
-            padding: 7px 10px;
-            color: $font-dark;
-        }
+      .fa-magnifying-glass {
+        align-self: center;
+        padding: 7px 10px;
+        color: $font-dark;
+      }
     }
   }
 
@@ -94,49 +94,47 @@ body {
     display: flex;
     column-gap: 20px;
     list-style: none;
-}
+  }
 
   .nav {
     display: flex;
     column-gap: 40px;
 
-
     &-item {
       color: $light-color;
 
-    &-link {
-      font-size: 20px;
-      transition: all 0.4s;
-
-      &:hover {
-        color: $font-dark;
-      }
-
-      &:focus {
-        color: $font-dark;
-      }
-
-      &::after {
-        content: ' ';
-        height: 3px;
-        width: 100%;
-        background: $font-dark;
-        display: block;
-        opacity: 0;
+      &-link {
+        font-size: 20px;
         transition: all 0.4s;
-      }
 
-      &:hover::after {
-        opacity: 1;
-      }
+        &:hover {
+          color: $font-dark;
+        }
 
-      &:focus::after {
-        opacity: 1;
+        &:focus {
+          color: $font-dark;
+        }
+
+        &::after {
+          content: " ";
+          height: 3px;
+          width: 100%;
+          background: $font-dark;
+          display: block;
+          opacity: 0;
+          transition: all 0.4s;
+        }
+
+        &:hover::after {
+          opacity: 1;
+        }
+
+        &:focus::after {
+          opacity: 1;
+        }
       }
     }
-
   }
-}
 }
 
 // Main section - hero
@@ -162,6 +160,11 @@ body {
       position: relative;
       animation: move-right 10s linear;
       animation-iteration-count: 2;
+      text-transform: uppercase;
+      font-family: "manrope", sans-serif;
+      text-shadow: 5px 5px 0 rgb(20, 19, 19), -2px -2px 0 rgb(29, 24, 24),
+        2px -2px 0 rgb(27, 15, 15), -2px 2px 0 rgb(16, 15, 15),
+        2px 2px 0 rgb(13, 12, 12);
     }
   }
 }
@@ -594,8 +597,3 @@ h1 {
     border-color: transparent $box-color transparent transparent;
   }
 }
-
-body {
-  color: #000000;
-}
-
