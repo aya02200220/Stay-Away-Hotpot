@@ -318,6 +318,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* THIS creates the animation! */
+  transition: transform 1s;
 }
 .slider .slide .card-overlay {
   position: absolute;

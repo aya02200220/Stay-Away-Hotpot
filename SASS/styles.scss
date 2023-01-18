@@ -303,6 +303,9 @@ li {
     align-items: center;
     justify-content: center;
 
+    /* THIS creates the animation! */
+    transition: transform 1s;
+
     .card-overlay {
       position: absolute;
       background-color: #7d7c7c7b;
