@@ -161,6 +161,11 @@ body {
       position: relative;
       animation: move-right 10s linear;
       animation-iteration-count: 2;
+      text-transform: uppercase;
+      font-family: "manrope", sans-serif;
+      text-shadow: 5px 5px 0 rgb(20, 19, 19), -2px -2px 0 rgb(29, 24, 24),
+        2px -2px 0 rgb(27, 15, 15), -2px 2px 0 rgb(16, 15, 15),
+        2px 2px 0 rgb(13, 12, 12);
     }
   }
 }
@@ -596,6 +601,3 @@ h1 {
   }
 }
 
-body {
-  color: #000000;
-}
