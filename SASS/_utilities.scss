@@ -1,0 +1,25 @@
+/* icon */
+i {
+  margin: 5px;
+}
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 0.8rem;
+  color: $light-color;
+  background-color: $primary-color;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: url("/assets/img/home/jacky.png"), pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid $light-color;
+}

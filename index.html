@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Hotpot grocery shopping online or instore in Vancouver!Make your own hotpot with fresh and local ingredients from Stay Away Hotpot!">
-    <meta name="keywords" content="hotpot,grocery,Vancouver,delicious,Stay">
-
+    <meta name="keywords" content="hotpot,grocery,Vancouver,delicious,Stay Away Hotpot">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Nunito:300,400,600,700">
+    <link rel="stylesheet" href="SASS/styles.css" />
     <script
       src="https://kit.fontawesome.com/cb3859e059.js"
       crossorigin="anonymous"
@@ -14,51 +15,144 @@
     <title>Stay Away Hotpot</title>
   </head>
   <body>
-    <nav>
-      <img src="" alt="Logo" />
-      <span><i class="fa-solid fa-magnifying-glass"></i>Search</span>
-      <ul>
-        <li>Home</li>
-        <li>Shop</li>
-        <li>About</li>
-      </ul>
-      <i class="fa-solid fa-user"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
-    </nav>
+    <header class="header">
+      <div class="header-left">
+        <!-- <img src="" alt="Logo" /> -->
+        <img src="./assets/img/home/hotpot.png"alt="hotpot logo">
+        <span>StayAway HotPot</span>
+        <span><i class="fa-solid fa-magnifying-glass"></i>Search</span>
+      </div>
+
+      <nav class="header-middle">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
 
     <main>
       <!-- First Page Element-->
       <section class="hero">
-          <h1>we told you to stay away!</h1>
-          <a href="#shop"class="btn">Shop!<i class="fa-regular fa-heart"></i></a>
+        <div class="hero__content">
+          <h1 class="hero__content-text" >we told you to stay away!</h1>
+          <a href="#shop"class="btn">Shop!<img src="./assets/img/home/hotpot-small.png"alt="hotpot logo"></a>
+        </div>
       </section>
-
+    </main>
       <!-- Shop Section -->
-      <section class="shop">
-        <div class="shop soupbase">
-          <img src="" alt="" />
-          <button type="button">SHOP</button>
-        </div>
-        <div class="shop meatroll">
-          <img src="" alt="" />
-          <button type="button">SHOP</button>
-        </div>
-        <div class="shop meatball">
-          <img src="" alt="" />
-          <button type="button">SHOP</button>
-        </div>
-        <div class="shop miscellaneous">
-          <img src="" alt="" />
-          <button type="button">SHOP</button>
-        </div>
-      </section>
-
+    <section class="shop">
+      <div class="shop soupbase">
+        <img src="" alt="" />
+        <button type="button">SHOP</button>
+      </div>
+      <div class="shop meatroll">
+        <img src="" alt="" />
+        <button type="button">SHOP</button>
+      </div>
+      <div class="shop meatball">
+        <img src="" alt="" />
+        <button type="button">SHOP</button>
+      </div>
+      <div class="shop miscellaneous">
+        <img src="" alt="" />
+        <button type="button">SHOP</button>
+      </div>
+    </section>
+   
       <!-- Review Section -->
-      <section class="review">
+      <div class="reviews">
+        <h3>What Our Customers Say</h3>
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <p>Don't stay away from Stay away hotpot!</p>
+                <a href="#carousel__slide4" class="carousel__prev"
+                  >Go to last slide</a
+                >
+                <a href="#carousel__slide2" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <p>this is awesome</p>
+              </div>
+              <a href="#carousel__slide1" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide3" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <p>this is awesome amazing</p>
+              </div>
+              <a href="#carousel__slide2" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide4" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <p>this is awesome fabulous!</p>
+              </div>
+              <a href="#carousel__slide3" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide1" class="carousel__next"
+                >Go to first slide</a
+              >
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button"
+                  >Go to slide 1</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button"
+                  >Go to slide 2</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button"
+                  >Go to slide 3</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button"
+                  >Go to slide 4</a
+                >
+              </li>
+            </ol>
+          </aside>
+        </section>
+      </div>
+      <!-- <section class="review">
+        <h3>What Our Customers Say</h3>
         <div>Don't stay away from Stay away hotpot!</div>
         <div>this is awesome</div>
         <div>this is amazing</div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer Section -->
