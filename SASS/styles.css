@@ -29,6 +29,7 @@ i {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 * ul {
   list-style: none;
@@ -202,7 +203,7 @@ body {
 }
 
 .content {
-  width: 400px;
+  width: 600px;
   height: 250px;
 }
 .content:nth-child(1) {
@@ -231,7 +232,7 @@ body {
 .slideshow {
   display: flex;
   -webkit-animation: loop-slide 20s infinite linear 1s both;
-  animation: loop-slide 18s infinite linear 1s both;
+  animation: loop-slide 20s infinite linear 1s both;
 }
 
 @-webkit-keyframes loop-slide {
@@ -258,8 +259,10 @@ body {
 
 /* hover action */
 .content-hover {
-  padding: 20px 10px;
+  padding: 20px 40px;
+  margin: 0 50px;
   color: #1a1a1a;
+  font-size: 20px;
   display: flex;
   align-items: flex-start;
   transition: all 0.2s;
