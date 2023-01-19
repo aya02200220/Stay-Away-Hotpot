@@ -29,6 +29,7 @@ i {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 * ul {
   list-style: none;
@@ -39,6 +40,13 @@ i {
 }
 
 /* BASE STYLES */
+
+h3 {
+  font-family: "manrope", sans-serif;
+  font-size: 30px;
+  text-shadow: 5px 5px 0 rgb(20, 19, 19), -2px -2px 0 rgb(29, 24, 24), 2px -2px 0 rgb(27, 15, 15), -2px 2px 0 rgb(16, 15, 15), 2px 2px 0 rgb(13, 12, 12);
+}
+
 /* NORMAL STYLES */
 /* Nav Bar*/
 .header {
@@ -174,32 +182,11 @@ i {
   font-size: 55px;
   margin-top: 100px;
   position: relative;
-  -webkit-animation: move-right 10s linear;
-          animation: move-right 10s linear;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
   text-transform: uppercase;
   font-family: "manrope", sans-serif;
   text-shadow: 5px 5px 0 rgb(20, 19, 19), -2px -2px 0 rgb(29, 24, 24), 2px -2px 0 rgb(27, 15, 15), -2px 2px 0 rgb(16, 15, 15), 2px 2px 0 rgb(13, 12, 12);
 }
 
-@-webkit-keyframes move-right {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 100%;
-  }
-}
-
-@keyframes move-right {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 100%;
-  }
-}
 .hero::before {
   content: "";
   position: absolute;
@@ -216,7 +203,7 @@ i {
 
 .reviews {
   padding: 20px 30px;
-  background-color: #9b2132;
+  background-color: #d23944;
   height: auto;
 }
 .reviews h3 {
@@ -230,20 +217,20 @@ i {
 }
 
 .content {
-  width: 400px;
+  width: 600px;
   height: 250px;
 }
 .content:nth-child(1) {
-  background-color: #fff;
+  background-color: #242439;
 }
 .content:nth-child(2) {
-  background-color: #fff;
+  background-color: #242439;
 }
 .content:nth-child(3) {
-  background-color: #fff;
+  background-color: #242439;
 }
 .content:nth-child(4) {
-  background-color: #fff;
+  background-color: #242439;
 }
 
 /* slide rail flame */
@@ -253,13 +240,14 @@ i {
   align-items: center;
   height: auto;
   padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 /* slides block*/
 .slideshow {
   display: flex;
   -webkit-animation: loop-slide 20s infinite linear 1s both;
-  animation: loop-slide 18s infinite linear 1s both;
+  animation: loop-slide 20s infinite linear 1s both;
 }
 
 @-webkit-keyframes loop-slide {
@@ -286,8 +274,10 @@ i {
 
 /* hover action */
 .content-hover {
-  padding: 20px 10px;
-  color: #1a1a1a;
+  padding: 20px 40px;
+  margin: 0 50px;
+  color: #e2c18a;
+  font-size: 20px;
   display: flex;
   align-items: flex-start;
   transition: all 0.2s;
@@ -302,16 +292,20 @@ i {
 }
 
 footer {
-  background-color: #fff;
+  background-color: #9b2132;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  -moz-column-gap: 20%;
+       column-gap: 20%;
   padding: 20px 20px;
 }
 footer h3 {
   font-size: 30px;
+  padding-bottom: 10px;
 }
 footer p {
-  margin: 10px 0;
+  margin: 0px 0;
   font-size: 20px;
 }
 footer .footer-right {
@@ -320,9 +314,13 @@ footer .footer-right {
 footer .footer-left {
   padding: 0 10px;
 }
+footer .footer-contact {
+  display: flex;
+  flex-direction: column;
+}
 footer .footer-sns {
   display: flex;
-  padding-top: 50px;
+  padding-top: 0px;
 }
 footer .footer-sns.icons {
   padding: 10px 0;
@@ -330,6 +328,18 @@ footer .footer-sns.icons {
 footer .footer-sns.icons i {
   padding: 0px 20px;
   height: 20px;
+}
+.btn-footer {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 0.8rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: url("/assets/img/home/jacky2.png"), pointer;
+}
+.btn-footer:hover {
+  opacity: 0.8;
 }
 
 .about-header {
@@ -347,11 +357,12 @@ footer .footer-sns.icons i {
 }
 
 .about__img {
-  position: fixed;
-  width: 25%;
-  left: 50%;
-  bottom: 10%;
-  z-index: 0;
+  display: inline-block;
+  position: absolute;
+  width: 350px;
+  height: auto;
+  top: 245%;
+  left: 60%;
 }
 
 #timeline-header {
@@ -361,18 +372,38 @@ footer .footer-sns.icons i {
 }
 
 .container {
+  justify-content: center;
+  display: flex;
   max-width: 1100px;
   margin: 0 auto;
-  text-align: center;
   line-height: 2rem;
   color: #fff;
   text-transform: uppercase;
   font-family: "manrope", sans-serif;
   text-shadow: 5px 5px 0 rgb(20, 19, 19), -2px -2px 0 rgb(29, 24, 24), 2px -2px 0 rgb(27, 15, 15), -2px 2px 0 rgb(16, 15, 15), 2px 2px 0 rgb(13, 12, 12);
 }
-
-h1 {
+.container__logo {
+  margin: 5px;
+}
+.container__content {
   font-size: 2.3rem;
+  width: 200px;
+  margin: 10px;
+}
+
+.timeline__text {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "manrope", sans-serif;
+  text-shadow: 5px 5px 0 rgb(20, 19, 19), -2px -2px 0 rgb(29, 24, 24), 2px -2px 0 rgb(27, 15, 15), -2px 2px 0 rgb(16, 15, 15), 2px 2px 0 rgb(13, 12, 12);
+}
+
+.timeline__p {
+  font-size: 1.2rem;
+  padding: 1rem 1rem;
+  font-family: "manrope", sans-serif;
+  font-weight: 300;
 }
 
 #timeline ul {
@@ -489,16 +520,16 @@ h1 {
   align-items: center;
   width: 200px;
   height: 60px;
-  color: gray;
+  color: #1a1a1a;
   background-color: #fff;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: none;
+  border: 0.3rem solid #1a1a1a;
   border-radius: 30px;
   outline: none;
-  cursor: pointer;
+  cursor: url(/assets/img/home/jacky2.png), pointer;
 }
 .slider .slide img {
   width: 800px;
@@ -568,6 +599,20 @@ h1 {
   #timeline ul li:nth-child(even) div {
     left: -284px;
   }
+  .about__img {
+    width: 280px;
+    height: auto;
+    top: 280%;
+    left: 60%;
+  }
+}
+@media (max-width: 700px) {
+  .about__img {
+    width: 280px;
+    height: auto;
+    top: 275%;
+    left: 55%;
+  }
 }
 @media (max-width: 600px) {
   #timeline ul li {
@@ -583,5 +628,11 @@ h1 {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent rgb(154, 151, 151) transparent transparent;
+  }
+  .about__img {
+    width: 270px;
+    height: auto;
+    top: 280%;
+    left: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */
