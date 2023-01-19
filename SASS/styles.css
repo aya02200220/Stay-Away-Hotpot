@@ -335,7 +335,7 @@ footer .footer-sns.icons i {
   position: absolute;
   width: 350px;
   height: auto;
-  top: 235%;
+  top: 245%;
   left: 60%;
 }
 
@@ -363,6 +363,21 @@ footer .footer-sns.icons i {
   font-size: 2.3rem;
   width: 200px;
   margin: 10px;
+}
+
+.timeline__text {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "manrope", sans-serif;
+  text-shadow: 5px 5px 0 rgb(20, 19, 19), -2px -2px 0 rgb(29, 24, 24), 2px -2px 0 rgb(27, 15, 15), -2px 2px 0 rgb(16, 15, 15), 2px 2px 0 rgb(13, 12, 12);
+}
+
+.timeline__p {
+  font-size: 1.2rem;
+  padding: 1rem 1rem;
+  font-family: "manrope", sans-serif;
+  font-weight: 300;
 }
 
 #timeline ul {
@@ -561,7 +576,7 @@ footer .footer-sns.icons i {
   .about__img {
     width: 280px;
     height: auto;
-    top: 240%;
+    top: 280%;
     left: 60%;
   }
 }
@@ -569,7 +584,7 @@ footer .footer-sns.icons i {
   .about__img {
     width: 280px;
     height: auto;
-    top: 250%;
+    top: 275%;
     left: 55%;
   }
 }
@@ -591,7 +606,7 @@ footer .footer-sns.icons i {
   .about__img {
     width: 270px;
     height: auto;
-    top: 245%;
+    top: 280%;
     left: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */
