@@ -12,24 +12,26 @@
       name="keywords"
       content="hotpot,grocery,Vancouver,delicious,Stay Away Hotpot"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="SASS/lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="SASS/styles.css" />
     <script
       src="https://kit.fontawesome.com/cb3859e059.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Stay Away Hotpot</title>
   </head>
   <body>
     <header class="header">
       <div class="header-left">
         <!-- <img src="" alt="Logo" /> -->
-        <img src="./assets/img/home/hotpot.png" alt="hotpot logo" />
+
+        <div class="header-left-logo">
+          <img src="./assets/img/home/hotpot.png"alt="hotpot logo">
+        </div>
 
         <span class="header-left-logo">StayAway HotPot</span>
         <div class="header-left-searchbar">
@@ -45,13 +47,13 @@
       <nav class="header-middle">
         <ul class="nav">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-item-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Shop</a>
+            <a href="#" class="nav-item-link">Shop</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">About</a>
+            <a href="about.html" class="nav-item-link">About</a>
           </li>
         </ul>
       </nav>
@@ -75,12 +77,10 @@
       <!-- First Page Element-->
       <section class="hero">
         <div class="hero__content">
-          <h1 class="hero__content-text">we told you to stay away!</h1>
-          <a href="#shop" class="btn"
-            >Shop!<img
-              src="./assets/img/home/hotpot-small.png"
-              alt="hotpot logo"
-          /></a>
+
+          <h1 class="hero__content-text" >we told you to stay away!</h1>
+          <a href="#shop"class="btn">Shop!<i class="fa-regular fa-face-angry fa-lg"></i></a>
+
         </div>
       </section>
       <!-- </main> -->
@@ -249,6 +249,18 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      $(document).ready(function() {
+        $(window).bind('scroll', function() {
+          var gap = 50;
+          if($(window).scrollTop() > gap) {
+            $('header').addClass('active');
+          } else {
+            $('header').removeClass('active');
+          }
+        })
+      });
+    </script>
   </body>
 </html>
