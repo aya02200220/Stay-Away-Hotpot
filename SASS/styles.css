@@ -29,6 +29,7 @@ i {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 * ul {
   list-style: none;
@@ -176,7 +177,7 @@ h3 {
 
 .reviews {
   padding: 20px 30px;
-  background-color: #9b2132;
+  background-color: #d23944;
   height: auto;
 }
 .reviews h3 {
@@ -190,20 +191,20 @@ h3 {
 }
 
 .content {
-  width: 400px;
+  width: 600px;
   height: 250px;
 }
 .content:nth-child(1) {
-  background-color: #fff;
+  background-color: #242439;
 }
 .content:nth-child(2) {
-  background-color: #fff;
+  background-color: #242439;
 }
 .content:nth-child(3) {
-  background-color: #fff;
+  background-color: #242439;
 }
 .content:nth-child(4) {
-  background-color: #fff;
+  background-color: #242439;
 }
 
 /* slide rail flame */
@@ -213,13 +214,14 @@ h3 {
   align-items: center;
   height: auto;
   padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 /* slides block*/
 .slideshow {
   display: flex;
   -webkit-animation: loop-slide 20s infinite linear 1s both;
-  animation: loop-slide 18s infinite linear 1s both;
+  animation: loop-slide 20s infinite linear 1s both;
 }
 
 @-webkit-keyframes loop-slide {
@@ -246,8 +248,10 @@ h3 {
 
 /* hover action */
 .content-hover {
-  padding: 20px 10px;
-  color: #1a1a1a;
+  padding: 20px 40px;
+  margin: 0 50px;
+  color: #e2c18a;
+  font-size: 20px;
   display: flex;
   align-items: flex-start;
   transition: all 0.2s;
@@ -262,17 +266,20 @@ h3 {
 }
 
 footer {
-  background-color: #fff;
-  color: #fff;
+  background-color: #9b2132;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  -moz-column-gap: 20%;
+       column-gap: 20%;
   padding: 20px 20px;
 }
 footer h3 {
   font-size: 30px;
+  padding-bottom: 10px;
 }
 footer p {
-  margin: 10px 0;
+  margin: 0px 0;
   font-size: 20px;
 }
 footer .footer-right {
@@ -281,9 +288,13 @@ footer .footer-right {
 footer .footer-left {
   padding: 0 10px;
 }
+footer .footer-contact {
+  display: flex;
+  flex-direction: column;
+}
 footer .footer-sns {
   display: flex;
-  padding-top: 50px;
+  padding-top: 0px;
 }
 footer .footer-sns.icons {
   padding: 10px 0;
@@ -291,6 +302,18 @@ footer .footer-sns.icons {
 footer .footer-sns.icons i {
   padding: 0px 20px;
   height: 20px;
+}
+.btn-footer {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 0.8rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: url("/assets/img/home/jacky2.png"), pointer;
+}
+.btn-footer:hover {
+  opacity: 0.8;
 }
 
 .about-header {
