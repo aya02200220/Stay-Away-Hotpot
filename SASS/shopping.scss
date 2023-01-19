@@ -1,9 +1,31 @@
 @import "variables";
 @import "utilities";
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+/* BASE STYLES */
+
+h3 {
+  font-family: "manrope", sans-serif;
+  font-size: 30px;
+  text-shadow: 5px 5px 0 rgb(20, 19, 19), -2px -2px 0 rgb(29, 24, 24),
+    2px -2px 0 rgb(27, 15, 15), -2px 2px 0 rgb(16, 15, 15),
+    2px 2px 0 rgb(13, 12, 12);
 }
 
 .app {
@@ -14,11 +36,147 @@
 
   .header {
     font-size: 28px;
-    color: #e2c18a;
+    color: $font-yellow;
     padding: 30px;
     background-color: $primary-color;
     box-sizing: border-box;
     position: sticky;
+  }
+
+  /* Nav Bar*/
+  .header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 80px;
+    padding: 0 30px;
+    color: $font-light;
+    // opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 20;
+    transition: all 0.5s;
+
+    &-left {
+      display: flex;
+      column-gap: 30px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      span {
+        font-size: 30px;
+      }
+
+      form {
+        margin-left: 50px;
+        background: $light-color;
+        height: 30px;
+        display: flex;
+
+        input {
+          flex: 1;
+          border: none;
+          outline: none;
+          // border-radius: 25px;
+        }
+
+        button {
+          display: none;
+        }
+
+        .fa-magnifying-glass {
+          align-self: center;
+          padding: 7px 10px;
+          color: $font-dark;
+        }
+      }
+    }
+
+    &-middle {
+      .nav {
+        display: flex;
+        column-gap: 40px;
+
+        &-item {
+          color: $light-color;
+
+          &-link {
+            font-size: 25px;
+            transition: all 0.4s;
+
+            &:hover {
+              color: $font-dark;
+            }
+
+            &:focus {
+              color: $font-dark;
+            }
+
+            &::after {
+              content: " ";
+              height: 3px;
+              width: 100%;
+              background: $font-dark;
+              display: block;
+              opacity: 0;
+              transition: all 0.4s;
+            }
+
+            &:hover::after {
+              opacity: 1;
+            }
+
+            &:focus::after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      column-gap: 20px;
+      list-style: none;
+      font-size: 25px;
+
+      .nav-item {
+        transition: all 0.4s;
+
+        &:hover {
+          color: $dark-color;
+        }
+
+        &:focus {
+          color: $font-dark;
+        }
+
+        &::after {
+          content: " ";
+          height: 3px;
+          width: 100%;
+          background: $font-dark;
+          display: block;
+          opacity: 0;
+          transition: all 0.4s;
+        }
+
+        &:hover::after {
+          opacity: 1;
+        }
+
+        &:focus::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .active {
+    background: $primary-color;
   }
 
   .main {
@@ -29,11 +187,11 @@
     .wrapper {
       display: flex;
       width: 20%;
-      background-color: #e2c18a;
+      background-color: $font-yellow;
 
       .sidebar {
         font-size: 28px;
-        background-color: #e2c18a;
+        background-color: $font-yellow;
         color: $primary-color;
         display: flex;
         flex-direction: column;
@@ -44,7 +202,7 @@
         align-self: flex-end;
         bottom: 600px;
 
-        p {
+        h3 {
           font-size: 40px;
           padding: 20px;
         }
@@ -63,6 +221,7 @@
           font-size: 60px;
           margin: 50px;
           padding-top: 50px;
+          color: $light-color;
         }
 
         .cards {
@@ -90,22 +249,20 @@
             }
 
             .btn-order {
-              width: 150px;
-              height: 40px;
-              color: #d3ab55;
-              background-color: #fff;
-              font-size: 14px;
-              font-weight: bold;
-              text-transform: uppercase;
-              letter-spacing: 1px;
-              border: 1px solid #d3ab55;
-              border-radius: 30px;
-              outline: none;
-              cursor: pointer;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              margin: 10px 0 30px 0;
+              text-decoration: none;
+              display: inline-block;
+              margin: 1rem;
+              padding: 1rem 2rem;
+              color: $font-yellow;
+              background-color: $primary-color;
+              font-size: 1.3rem;
+              border: none;
+              border-radius: 5px;
+              cursor: url("/assets/img/home/jacky2.png"), pointer;
+
+              &:hover {
+                opacity: 0.8;
+              }
             }
           }
         }
