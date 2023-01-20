@@ -9,57 +9,92 @@
   </head>
   <body>
     <div class="app">
-      <header class="header">
-        <div class="header-left">
-          <!-- <img src="" alt="Logo" /> -->
+        <!-- Header for PC -->
+        <div class="for-pc">
+          <header class="header">
+          <div class="header-left">
+            <div class="header-left-logo">
+              <img src="./assets/img/home/hotpot.png" alt="hotpot logo" />
+            </div>
 
-          <div class="header-left-logo">
-            <img src="./assets/img/home/hotpot.png" alt="hotpot logo" />
+            <span class="header-left-logo">StayAway HotPot</span>
+            <div class="header-left-searchbar">
+              <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+              <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search" />
+                <button type="submit">Search</button>
+              </form>
+            </div>
           </div>
 
-          <span class="header-left-logo">StayAway HotPot</span>
-          <div class="header-left-searchbar">
-            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-            <form>
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="search" placeholder="Search" />
-              <button type="submit">Search</button>
-            </form>
+          <nav class="header-middle">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-item-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="shopping.html" class="nav-item-link">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-item-link">About</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-right">
+            <li class="nav-item">
+              <a href="#" class="nav-link" title="Login"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" title="Open Cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <!-- <i class="fa-solid fa-user"></i> -->
+            <!-- <i class="fa-solid fa-cart-shopping"></i> -->
           </div>
-        </div>
-
-        <nav class="header-middle">
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="index.html" class="nav-item-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="shopping.html" class="nav-item-link">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-item-link">About</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-right">
-          <li class="nav-item">
-            <a href="#" class="nav-link" title="Login"
-              ><i class="fa-solid fa-user"></i
-            ></a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" title="Open Cart"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-          </li>
-          <!-- <i class="fa-solid fa-user"></i> -->
-          <!-- <i class="fa-solid fa-cart-shopping"></i> -->
         </div>
       </header>
+
+        <!-- Header for SP -->
+        <div class="for-sp">
+          <div class="hamberger">
+            <div class="header-left">
+              <div class="header-left-logo">
+                <img src="./assets/img/home/hotpot.png" alt="hotpot logo" />
+              </div>
+              <span class="header-left-logo">StayAway HotPot</span>
+           </div>
+         </div>
+
+          <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+          </label>
+
+          <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+              <li><a href="index.html" target="_blank">Home</a></li>
+              <li><a href="shopping.html" target="_blank">Shop</a></li>
+              <li><a href="about.html" target="_blank">About</a></li>
+              <!-- <li>Categories</li> -->
+                <li><a href="#soup" target="_blank">Soup Base</a></li>
+                <li><a href="#meat_roll" target="_blank">Meat Roll</a></li>
+                <li><a href="#meat_ball" target="_blank">Meat Ball</a></li>
+                <li><a href="#miscellaneous" target="_blank">Miscellaneous</a></li>
+            </ul>
+          </div>
+        </div>
+
       <div class="main">
-        <div class="wrapper">
+
+        <div class="pc-sidebar">
           <div class="sidebar">
-            <h3>Categories</h3>
+            <h3 class="sidebar-title">Categories</h3>
             <a href="#soup" class="section">Soup Base</a>
             <a href="#meat_roll" class="section">Meat Roll</a>
             <a href="#meat_ball" class="section">Meat Ball</a>
