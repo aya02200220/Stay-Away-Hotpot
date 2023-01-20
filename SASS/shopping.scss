@@ -262,6 +262,7 @@ section {
           letter-spacing: 2px;
           text-transform: capitalize;
           margin-top: 20px;
+          text-align: center;
         }
 
         .btn-order {
@@ -353,11 +354,12 @@ section {
   section {
     .category {
       .title {
-        font-size: 60px;
+        font-size: 40px;
         margin: 50px;
-        padding-top: 100px;
+        padding-top: 0;
         text-align: center;
         color: $light-color;
+        // word-break: break-all;
       }
 
       .cards {
@@ -377,24 +379,30 @@ section {
 
 @media screen and (max-width: 700px) {
   .app {
+    #soup {
+      padding-top: 120px;
+    }
     .main {
       // display: flex;
       // flex-direction: column;
       padding-left: 0;
 
       .wrapper {
-        position: static;
+        position: fixed;
+        top: 80;
         width: 100%;
         height: inherit;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         text-align: center;
-        // margin: 0;
         padding: 90px 10px 10px;
 
+        .category {
+          .title {
+            padding-top: 0;
+          }
+        }
+
         .sidebar {
-          align-items: center;
+          // align-items: center;
           display: flex;
           flex-direction: unset;
           justify-content: center;

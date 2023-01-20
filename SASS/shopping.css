@@ -237,6 +237,7 @@ section .category .cards .card .item-name {
   letter-spacing: 2px;
   text-transform: capitalize;
   margin-top: 20px;
+  text-align: center;
 }
 section .category .cards .card .btn-order {
   text-decoration: none;
@@ -305,9 +306,9 @@ section .category .cards .card .btn-order:hover {
 }
 @media screen and (max-width: 1280px) {
   section .category .title {
-    font-size: 60px;
+    font-size: 40px;
     margin: 50px;
-    padding-top: 100px;
+    padding-top: 0;
     text-align: center;
     color: #fff;
   }
@@ -323,18 +324,24 @@ section .category .cards .card .btn-order:hover {
   }
 }
 @media screen and (max-width: 700px) {
+  .app #soup {
+    padding-top: 120px;
+  }
   .app .main {
     padding-left: 0;
   }
   .app .main .wrapper {
-    position: static;
+    position: fixed;
+    top: 80;
     width: 100%;
     height: inherit;
     text-align: center;
     padding: 90px 10px 10px;
   }
+  .app .main .wrapper .category .title {
+    padding-top: 0;
+  }
   .app .main .wrapper .sidebar {
-    align-items: center;
     display: flex;
     flex-direction: unset;
     justify-content: center;

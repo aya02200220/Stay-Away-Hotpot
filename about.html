@@ -1,131 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Welcome to the most extraordinary hotpot shop in Vancouver">
-  <meta name="keywords" content="hotpot,grocery,Vancouver,delicious,Stay Away Hotpot">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Nunito:300,400,600,700">
-  <script src="https://kit.fontawesome.com/cb3859e059.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="SASS/styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <title>Stay Away Hotpot| About</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header-left">
-      <!-- <img src="" alt="Logo" /> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Welcome to the most extraordinary hotpot shop in Vancouver"
+    />
+    <meta
+      name="keywords"
+      content="hotpot,grocery,Vancouver,delicious,Stay Away Hotpot"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
+    />
+    <script
+      src="https://kit.fontawesome.com/cb3859e059.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="SASS/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Stay Away Hotpot| About</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <!-- <img src="" alt="Logo" /> -->
 
-      <div class="header-left-logo">
-        <img src="./assets/img/home/hotpot.png" alt="hotpot logo" />
+        <div class="header-left-logo">
+          <img src="./assets/img/home/hotpot.png" alt="hotpot logo" />
+        </div>
+
+        <span class="header-left-logo">StayAway HotPot</span>
+        <div class="header-left-searchbar">
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+          <form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
       </div>
 
-      <span class="header-left-logo">StayAway HotPot</span>
-      <div class="header-left-searchbar">
-        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-        <form>
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="search" placeholder="Search" />
-          <button type="submit">Search</button>
-        </form>
+      <nav class="header-middle">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-item-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="shopping.html" class="nav-item-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-item-link">About</a>
+          </li>
+        </ul>
+        <!-- mobile navbar -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="header-right">
+        <li class="nav-item">
+          <a href="#" class="nav-link" title="Login"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" title="Open Cart"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </li>
+        <!-- <i class="fa-solid fa-user"></i> -->
+        <!-- <i class="fa-solid fa-cart-shopping"></i> -->
       </div>
-    </div>
+    </header>
+    <section class="about">
+      <section class="about-header"></section>
+      <section id="timeline-header">
+        <div class="container">
+          <img
+            class="container__logo"
+            src="./assets/img/home/hotpot.png"
+            alt="hotpot logo"
+          />
+          <h1 class="container__content">About Us</h1>
+        </div>
+      </section>
 
-    <nav class="header-middle">
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-item-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="shopping.html" class="nav-item-link">Shop</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-item-link">About</a>
-        </li>
-      </ul>
-      <!-- mobile navbar -->
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-    <div class="header-right">
-      <li class="nav-item">
-        <a href="#" class="nav-link" title="Login"
-          ><i class="fa-solid fa-user"></i
-        ></a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link" title="Open Cart"
-          ><i class="fa-solid fa-cart-shopping"></i
-        ></a>
-      </li>
-      <!-- <i class="fa-solid fa-user"></i> -->
-      <!-- <i class="fa-solid fa-cart-shopping"></i> -->
-    </div>
-  </header>
-<section class="about">
-  <section class="about-header"></section>
-  <section id="timeline-header">
-    <div class="container"> 
-      <img class="container__logo" src="./assets/img/home/hotpot.png"alt="hotpot logo">
-      <h1 class="container__content"> About Us</h1>
-    </div>
-  </section>
-
-  <section id="timeline">
-    <ul>
-      <li>
-        <div>
-          <h1 class="timeline__text"><i class="fas fa-chevron-right"></i> 2023 Jan: Landed in Vancouver</h1>
-          <p class="timeline__p">First Location - CICCC</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h1 class="timeline__text"><i class="fas fa-chevron-right"></i> 2022 Dec : Landed in Tokyo</h1>
-          <p class="timeline__p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto!
-          </p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h1 class="timeline__text"><i class="fas fa-chevron-right"></i> 2020 Feb: Landed in Taiwan</h1>
-          <p class="timeline__p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto!
-          </p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h1 class="timeline__text"><i class="fas fa-chevron-right"></i>2020 Jan: Founded in Hong Kong</h1>
-          <p class="timeline__p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-            eum assumenda architecto!
-          </p>
-        </div>
-      </li>
-    </ul>
-  <img class="about__img" src="assets/img/about/group_photo2.png" alt="group_photo">
-  </section>
-  </section>
-  <script src="navScript.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(window).bind("scroll", function () {
-        var gap = 50;
-        if ($(window).scrollTop() > gap) {
-          $("header").addClass("active");
-        } else {
-          $("header").removeClass("active");
-        }
+      <section id="timeline">
+        <ul>
+          <li>
+            <div>
+              <h1 class="timeline__text">
+                <i class="fas fa-chevron-right"></i> 2023 Jan: Landed in
+                Vancouver
+              </h1>
+              <p class="timeline__p">First Location - CICCC</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h1 class="timeline__text">
+                <i class="fas fa-chevron-right"></i> 2022 Dec : Landed in Tokyo
+              </h1>
+              <p class="timeline__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                eum assumenda architecto!
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h1 class="timeline__text">
+                <i class="fas fa-chevron-right"></i> 2020 Feb: Landed in Taiwan
+              </h1>
+              <p class="timeline__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                eum assumenda architecto!
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h1 class="timeline__text">
+                <i class="fas fa-chevron-right"></i>2020 Jan: Founded in Hong
+                Kong
+              </h1>
+              <p class="timeline__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                eum assumenda architecto!
+              </p>
+            </div>
+          </li>
+        </ul>
+        <img
+          class="about__img"
+          src="assets/img/about/group_photo2.png"
+          alt="group_photo"
+        />
+      </section>
+    </section>
+    <script src="navScript.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).bind("scroll", function () {
+          var gap = 50;
+          if ($(window).scrollTop() > gap) {
+            $("header").addClass("active");
+          } else {
+            $("header").removeClass("active");
+          }
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
