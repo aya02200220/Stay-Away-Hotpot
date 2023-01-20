@@ -46,6 +46,7 @@ h3 {
 /* Nav Bar*/
 .header {
   background-color: transparent;
+  // background-color: $primary-color;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -104,7 +105,7 @@ h3 {
         color: $light-color;
 
         &-link {
-          font-size: 25px;
+          font-size: 23px;
           transition: all 0.4s;
 
           &:hover {
@@ -133,6 +134,20 @@ h3 {
             opacity: 1;
           }
         }
+      }
+    }
+    .hamburger {
+      display: none;
+      cursor: pointer;
+
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: $font-light;
       }
     }
   }
@@ -320,9 +335,28 @@ h3 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
   .reviews {
-    height: 30vh;
+    height: auto;
+  }
+  .wrap {
+    height: auto;
+    // padding-bottom: 20px;
+  }
+  .content {
+    width: 400px;
+    height: 150px;
+    font-size: 20px;
+  }
+  .content-hover {
+    padding: 20px 10px;
+    margin: 0 10px;
+    color: $font-yellow;
+  }
+}
+@media screen and (max-width: 700px) {
+  .reviews {
+    height: auto;
     h3 {
       padding: 5px 0;
       font-size: 20px;
@@ -332,9 +366,9 @@ h3 {
     height: auto;
   }
   .content {
-    width: 300px;
-    height: 150px;
-    font-size: 13px;
+    width: 250px;
+    height: 160px;
+    font-size: 15px;
   }
   .content-hover {
     padding: 20px 10px;
@@ -410,13 +444,15 @@ footer {
     opacity: 0.8;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   footer {
     column-gap: 5%;
+    height: auto;
   }
 }
 @media screen and (max-width: 800px) {
   footer {
+    height: auto;
     h3 {
       font-size: 20px;
     }
@@ -703,12 +739,13 @@ a {
   border-color: transparent transparent transparent $box-color;
 }
 
-/* SLIDER */
+///////* SLIDER *///////////////////////////////////////////////
 .slider {
   max-width: 100rem;
   height: 50rem;
   margin: 0 auto;
   position: relative;
+  background-color: $primary-color;
 
   /* IN THE END */
   overflow: hidden;
@@ -839,7 +876,57 @@ a {
     opacity: 1;
   }
 }
+@media (max-width: 1100px) {
+  .slider {
+    .slide {
+      .card-overlay {
+        opacity: 1;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .slider {
+    .slide {
+      .card-overlay {
+        opacity: 1;
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .slider {
+    .slide {
+      height: 50rem;
+      .card-overlay {
+        opacity: 1;
+        height: 400px;
+      }
+    }
+    .slider__btn {
+      top: 56.4%;
+      height: 3.5rem;
+      width: 3.5rem;
+      font-size: 2rem;
+    }
 
+    .slider__btn--left {
+      left: 10%;
+      transform: translate(-50%, -50%);
+    }
+    .slider__btn--right {
+      right: 10%;
+      transform: translate(50%, -50%);
+    }
+    .slide {
+      img {
+        height: 400px;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////
 @media (max-width: 900px) {
   #timeline ul li div {
     width: 250px;
@@ -855,6 +942,12 @@ a {
     top: 280%;
     left: 60%;
   }
+
+  .header-left {
+    span {
+      display: none;
+    }
+  }
 }
 @media (max-width: 700px) {
   .about__img {
@@ -863,6 +956,62 @@ a {
     top: 275%;
     left: 55%;
   }
+
+  .header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header.active {
+      background-color: $primary-color;
+    }
+
+    &-left {
+      display: none;
+    }
+
+    &-middle {
+
+      .hamburger {
+        display: block;
+      }
+  
+      .hamburger.active {
+  
+        .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+  
+      .nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: $primary-color;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+  
+        &-item {
+          margin: 16px 0;
+        }
+      }
+  
+      .nav.active {
+        left: 0;
+      }
+    }
+  }
+
 }
 @media (max-width: 600px) {
   #timeline ul li {
