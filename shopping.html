@@ -64,10 +64,31 @@
       </div>
     </header>
     <div class="app">
+          <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+          </label>
+
+          <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+              <li><a href="index.html" target="_blank">Home</a></li>
+              <li><a href="shopping.html" target="_blank">Shop</a></li>
+              <li><a href="about.html" target="_blank">About</a></li>
+              <!-- <li>Categories</li> -->
+                <li><a href="#soup" target="_blank">Soup Base</a></li>
+                <li><a href="#meat_roll" target="_blank">Meat Roll</a></li>
+                <li><a href="#meat_ball" target="_blank">Meat Ball</a></li>
+                <li><a href="#miscellaneous" target="_blank">Miscellaneous</a></li>
+            </ul>
+          </div>
+        </div>
       <div class="main">
-        <div class="wrapper">
+
+        <div class="pc-sidebar">
           <div class="sidebar">
-            <h3>Categories</h3>
+            <h3 class="sidebar-title">Categories</h3>
             <a href="#soup" class="section">Soup Base</a>
             <a href="#meat_roll" class="section">Meat Roll</a>
             <a href="#meat_ball" class="section">Meat Ball</a>

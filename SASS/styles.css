@@ -568,8 +568,7 @@ a {
 .about-header {
   background: url(/assets/img/about/background.jpg) no-repeat center center/cover;
   height: 80vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
 }
 .about-header::before {
@@ -587,7 +586,7 @@ a {
   position: absolute;
   width: 350px;
   height: auto;
-  top: 245%;
+  top: 248%;
   left: 60%;
 }
 
@@ -601,6 +600,7 @@ a {
   justify-content: center;
   display: flex;
   max-width: 1100px;
+  overflow: auto;
   margin: 0 auto;
   line-height: 2rem;
   color: #fff;
@@ -876,7 +876,7 @@ a {
     width: 280px;
     height: auto;
     top: 275%;
-    left: 55%;
+    left: 50%;
   }
   .header {
     position: fixed;
@@ -939,6 +939,9 @@ a {
     width: 270px;
     height: auto;
     top: 280%;
-    left: 33%;
+    left: 50%;
+  }
+  .container__logo {
+    max-width: 70%;
   }
 }/*# sourceMappingURL=styles.css.map */

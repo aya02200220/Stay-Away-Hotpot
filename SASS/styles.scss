@@ -618,7 +618,7 @@ a {
   position: absolute;
   width: 350px;
   height: auto;
-  top: 245%;
+  top: 248%;
   left: 60%;
 }
 
@@ -632,6 +632,7 @@ a {
   justify-content: center;
   display: flex;
   max-width: 1100px;
+  overflow: auto;
   margin: 0 auto;
   line-height: 2rem;
   color: $light-color;
@@ -956,7 +957,7 @@ a {
     width: 280px;
     height: auto;
     top: 275%;
-    left: 55%;
+    left: 50%;
   }
 
   .header {
@@ -974,13 +975,11 @@ a {
     }
 
     &-middle {
-
       .hamburger {
         display: block;
       }
-  
+
       .hamburger.active {
-  
         .bar:nth-child(2) {
           opacity: 0;
         }
@@ -991,7 +990,7 @@ a {
           transform: translateY(-8px) rotate(-45deg);
         }
       }
-  
+
       .nav {
         position: fixed;
         left: -100%;
@@ -1002,18 +1001,17 @@ a {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-  
+
         &-item {
           margin: 16px 0;
         }
       }
-  
+
       .nav.active {
         left: 0;
       }
     }
   }
-
 }
 @media (max-width: 600px) {
   #timeline ul li {
@@ -1038,6 +1036,9 @@ a {
     width: 270px;
     height: auto;
     top: 280%;
-    left: 33%;
+    left: 50%;
+  }
+  .container__logo {
+    max-width: 70%;
   }
 }
