@@ -567,9 +567,9 @@ a {
 }
 .about-header {
   background: url(/assets/img/about/background.jpg) no-repeat center center/cover;
-  height: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 80vh;
+  object-fit: cover;
+  position: relative;
 }
 .about-header::before {
   content: "";
@@ -939,7 +939,7 @@ a {
     width: 270px;
     height: auto;
     top: 280%;
-    left: 45%;
+    left: 50%;
   }
   .container__logo {
     max-width: 70%;
