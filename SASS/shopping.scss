@@ -351,6 +351,9 @@ section {
 }
 
 @media screen and (max-width: 1280px) {
+  #soup {
+    padding-top: 80px;
+  }
   section {
     .category {
       .title {
@@ -418,8 +421,8 @@ section {
             justify-content: center;
             align-items: center;
             font-size: 16px;
-            border: 1px solid $dark-color;
-            border-radius: 30px;
+            border: 1px solid;
+            border-radius: 20px;
             margin: 5px;
             padding: 5px 10px;
           }
