@@ -600,6 +600,8 @@ a {
   background: url(/assets/img/about/background.jpg) no-repeat center
     center/cover;
   height: 80vh;
+  object-fit: cover;
+  position: relative;
 
   &::before {
     content: "";
@@ -616,7 +618,7 @@ a {
   position: absolute;
   width: 350px;
   height: auto;
-  top: 245%;
+  top: 248%;
   left: 60%;
 }
 
@@ -630,6 +632,7 @@ a {
   justify-content: center;
   display: flex;
   max-width: 1100px;
+  overflow: auto;
   margin: 0 auto;
   line-height: 2rem;
   color: $light-color;
@@ -956,7 +959,7 @@ a {
     width: 280px;
     height: auto;
     top: 275%;
-    left: 55%;
+    left: 50%;
   }
 
   .header {
@@ -1032,9 +1035,12 @@ a {
   }
 
   .about__img {
-    width: 270px;
+    width: 120px;
     height: auto;
     top: 280%;
-    left: 50%;
+    left: 60%;
+  }
+  .container__logo {
+    max-width: 70%;
   }
 }

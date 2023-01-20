@@ -184,11 +184,12 @@ h3 {
   width: 30%;
   background-color: #e2c18a;
 }
-.app .main .wrapper .sidebar {
+.app .main .sidebar {
   font-size: 28px;
   background-color: #e2c18a;
   color: #9b2132;
   padding: 50px;
+  margin-top: 50px;
   position: -webkit-sticky;
   position: sticky;
   bottom: 500px;
@@ -196,45 +197,49 @@ h3 {
   flex-direction: column;
   align-self: flex-end;
 }
-.app .main .wrapper .sidebar h3 {
+.app .main .sidebar h3 {
   font-size: 40px;
   padding: 20px;
 }
-.app .main .wrapper .sidebar a {
+.app .main .sidebar a {
   text-decoration: none;
   color: #9b2132;
   padding: 20px;
 }
-.app .main section .category .title {
+
+section .category .title {
   font-size: 60px;
   margin: 50px;
   padding-top: 100px;
   color: #fff;
 }
-.app .main section .category .cards {
+section .category .cards {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
-.app .main section .category .cards .card {
-  width: 33%;
+section .category .cards .card {
+  width: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.app .main section .category .cards .card img {
+section .category .cards .card img {
   -o-object-fit: cover;
      object-fit: cover;
   image-rendering: -webkit-optimize-contrast;
   width: 60%;
   height: 100%;
 }
-.app .main section .category .cards .card .item-name {
+section .category .cards .card .item-name {
   font-size: 28px;
   letter-spacing: 2px;
   text-transform: capitalize;
   margin-top: 20px;
 }
-.app .main section .category .cards .card .btn-order {
+section .category .cards .card .btn-order {
   text-decoration: none;
   display: inline-block;
   margin: 1rem 0 4rem 0;
@@ -246,6 +251,62 @@ h3 {
   border-radius: 5px;
   cursor: url("/assets/img/home/jacky2.png"), pointer;
 }
-.app .main section .category .cards .card .btn-order:hover {
+section .category .cards .card .btn-order:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  .about__img {
+    width: 280px;
+    height: auto;
+    top: 275%;
+    left: 55%;
+  }
+  .header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header .header.active {
+    background-color: #9b2132;
+  }
+  .header-left {
+    display: none;
+  }
+  .header-middle .hamburger {
+    display: block;
+  }
+  .header-middle .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .header-middle .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .header-middle .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .header-middle .nav {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #9b2132;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .header-middle .nav-item {
+    margin: 16px 0;
+  }
+  .header-middle .nav.active {
+    left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card img {
+    width: 20%;
+    height: 20%;
+  }
 }/*# sourceMappingURL=shopping.css.map */

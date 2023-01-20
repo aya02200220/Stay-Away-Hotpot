@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SASS/styles.css" />
     <link rel="stylesheet" href="SASS/shopping.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="app">
+      <!-- Header -->
       <header class="header">
         <div class="header-left">
           <!-- <img src="" alt="Logo" /> -->
-    
+
           <div class="header-left-logo">
             <img src="./assets/img/home/hotpot.png" alt="hotpot logo" />
           </div>
-    
+
           <span class="header-left-logo">StayAway HotPot</span>
           <div class="header-left-searchbar">
             <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
@@ -27,7 +30,7 @@
             </form>
           </div>
         </div>
-    
+
         <nav class="header-middle">
           <ul class="nav">
             <li class="nav-item">
@@ -40,6 +43,7 @@
               <a href="about.html" class="nav-item-link">About</a>
             </li>
           </ul>
+
           <!-- mobile navbar -->
           <div class="hamburger">
             <span class="bar"></span>
@@ -49,14 +53,10 @@
         </nav>
         <div class="header-right">
           <li class="nav-item">
-            <a href="#" class="nav-link" title="Login"
-              ><i class="fa-solid fa-user"></i
-            ></a>
+            <a href="index.html" class="nav-item-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" title="Open Cart"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            <a href="shopping.html" class="nav-item-link">Shop</a>
           </li>
           <!-- <i class="fa-solid fa-user"></i> -->
           <!-- <i class="fa-solid fa-cart-shopping"></i> -->
@@ -65,7 +65,7 @@
       <div class="main">
         <div class="wrapper">
           <div class="sidebar">
-            <h3>Categories</h3>
+            <h3 class="sidebar-title">Categories</h3>
             <a href="#soup" class="section">Soup Base</a>
             <a href="#meat_roll" class="section">Meat Roll</a>
             <a href="#meat_ball" class="section">Meat Ball</a>
@@ -319,6 +319,7 @@
         </section>
       </div>
     </div>
+    <script src="navScript.js"></script>
     <script>
       $(document).ready(function () {
         $(window).bind("scroll", function () {
@@ -331,5 +332,6 @@
         });
       });
     </script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -19,7 +19,6 @@
 }
 
 /* BASE STYLES */
-
 h3 {
   font-family: "manrope", sans-serif;
   font-size: 30px;
@@ -34,6 +33,7 @@ h3 {
   display: flex;
   flex-direction: column;
 
+  // Header for PC
   .header {
     font-size: 28px;
     color: $font-yellow;
@@ -175,7 +175,6 @@ h3 {
       }
     }
   }
-
   .active {
     background: $primary-color;
   }
@@ -188,85 +187,162 @@ h3 {
     .wrapper {
       display: flex;
       width: 30%;
-      background-color: $font-yellow;
-
-      .sidebar {
-        font-size: 28px;
-        background-color: $font-yellow;
-        color: $primary-color;
-        padding: 50px;
-        position: sticky;
-        bottom: 500px;
-        display: flex;
-        flex-direction: column;
-        align-self: flex-end;
-
-        h3 {
-          font-size: 40px;
-          padding: 20px;
-        }
-
-        a {
-          text-decoration: none;
-          color: $primary-color;
-          padding: 20px;
-        }
-      }
+      background-color: #e2c18a;
     }
 
-    section {
-      .category {
-        .title {
-          font-size: 60px;
-          margin: 50px;
-          padding-top: 100px;
-          color: $light-color;
+    .sidebar {
+      font-size: 28px;
+      background-color: $font-yellow;
+      color: $primary-color;
+      padding: 50px;
+      margin-top: 50px;
+      position: sticky;
+      bottom: 500px;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+
+      h3 {
+        font-size: 40px;
+        padding: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+section {
+  .category {
+    .title {
+      font-size: 60px;
+      margin: 50px;
+      padding-top: 100px;
+      color: $light-color;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .card {
+        width: 40vh;
+        // height: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          object-fit: cover;
+          image-rendering: -webkit-optimize-contrast;
+          width: 60%;
+          height: 100%;
         }
 
-        .cards {
-          display: flex;
-          flex-wrap: wrap;
+        .item-name {
+          font-size: 28px;
+          letter-spacing: 2px;
+          text-transform: capitalize;
+          margin-top: 20px;
+        }
 
-          .card {
-            width: 33%;
-            // height: 30vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .btn-order {
+          text-decoration: none;
+          display: inline-block;
+          margin: 1rem 0 4rem 0;
+          padding: 1rem 2rem;
+          color: $font-yellow;
+          background-color: $primary-color;
+          font-size: 1.3rem;
+          border: none;
+          border-radius: 5px;
+          cursor: url("/assets/img/home/jacky2.png"), pointer;
 
-            img {
-              object-fit: cover;
-              image-rendering: -webkit-optimize-contrast;
-              width: 60%;
-              height: 100%;
-            }
-
-            .item-name {
-              font-size: 28px;
-              letter-spacing: 2px;
-              text-transform: capitalize;
-              margin-top: 20px;
-            }
-
-            .btn-order {
-              text-decoration: none;
-              display: inline-block;
-              margin: 1rem 0 4rem 0;
-              padding: 1rem 2rem;
-              color: $font-yellow;
-              background-color: $primary-color;
-              font-size: 1.3rem;
-              border: none;
-              border-radius: 5px;
-              cursor: url("/assets/img/home/jacky2.png"), pointer;
-
-              &:hover {
-                opacity: 0.8;
-              }
-            }
+          &:hover {
+            opacity: 0.8;
           }
         }
       }
+    }
+  }
+}
+
+/////////////////// Hamberger ///////////////////////
+
+@media (max-width: 700px) {
+  .about__img {
+    width: 280px;
+    height: auto;
+    top: 275%;
+    left: 55%;
+  }
+
+  .header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header.active {
+      background-color: $primary-color;
+    }
+
+    &-left {
+      display: none;
+    }
+
+    &-middle {
+      .hamburger {
+        display: block;
+      }
+
+      .hamburger.active {
+        .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+
+      .nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: $primary-color;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+        &-item {
+          margin: 16px 0;
+        }
+      }
+
+      .nav.active {
+        left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    img {
+      width: 20%;
+      height: 20%;
     }
   }
 }
