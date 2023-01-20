@@ -1038,9 +1038,12 @@ a {
     width: 120px;
     height: auto;
     top: 280%;
+
     left: 60%;
+
   }
-  .container__logo {
-    max-width: 70%;
+  .about-header {
+    background: url(/assets/img/about/background.jpg) no-repeat center
+      center/contain;
   }
 }
