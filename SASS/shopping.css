@@ -75,6 +75,7 @@ h3 {
   top: 0px;
   z-index: 20;
   transition: all 0.5s;
+  background-color: #9b2132;
 }
 .app .header-left {
   display: flex;
@@ -180,21 +181,20 @@ h3 {
 }
 .app .main .wrapper {
   display: flex;
-  width: 20%;
+  width: 30%;
   background-color: #e2c18a;
 }
 .app .main .wrapper .sidebar {
   font-size: 28px;
   background-color: #e2c18a;
   color: #9b2132;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
   padding: 50px;
   position: -webkit-sticky;
   position: sticky;
+  bottom: 500px;
+  display: flex;
+  flex-direction: column;
   align-self: flex-end;
-  bottom: 600px;
 }
 .app .main .wrapper .sidebar h3 {
   font-size: 40px;
@@ -208,7 +208,7 @@ h3 {
 .app .main section .category .title {
   font-size: 60px;
   margin: 50px;
-  padding-top: 50px;
+  padding-top: 100px;
   color: #fff;
 }
 .app .main section .category .cards {
@@ -232,11 +232,12 @@ h3 {
   font-size: 28px;
   letter-spacing: 2px;
   text-transform: capitalize;
+  margin-top: 20px;
 }
 .app .main section .category .cards .card .btn-order {
   text-decoration: none;
   display: inline-block;
-  margin: 1rem;
+  margin: 1rem 0 4rem 0;
   padding: 1rem 2rem;
   color: #e2c18a;
   background-color: #9b2132;
