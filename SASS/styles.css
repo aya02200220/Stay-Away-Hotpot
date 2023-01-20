@@ -40,7 +40,6 @@ i {
 }
 
 /* BASE STYLES */
-
 h3 {
   font-family: "manrope", sans-serif;
   font-size: 30px;
@@ -217,6 +216,7 @@ h3 {
 }
 
 .content {
+  font-size: 20px;
   width: 600px;
   height: 250px;
 }
@@ -277,7 +277,6 @@ h3 {
   padding: 20px 40px;
   margin: 0 50px;
   color: #e2c18a;
-  font-size: 20px;
   display: flex;
   align-items: flex-start;
   transition: all 0.2s;
@@ -291,7 +290,30 @@ h3 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 800px) {
+  .reviews {
+    height: 30vh;
+  }
+  .reviews h3 {
+    padding: 5px 0;
+    font-size: 20px;
+  }
+  .wrap {
+    height: auto;
+  }
+  .content {
+    width: 300px;
+    height: 150px;
+    font-size: 13px;
+  }
+  .content-hover {
+    padding: 20px 10px;
+    margin: 0 10px;
+    color: #e2c18a;
+  }
+}
 footer {
+  height: 50vh;
   background-color: #9b2132;
   display: flex;
   justify-content: center;
@@ -360,8 +382,35 @@ footer .footer-sns.icons i {
          column-gap: 5%;
   }
 }
+@media screen and (max-width: 800px) {
+  footer {
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer .contact-us {
+    margin-top: 50px;
+  }
+  footer .footer-sns {
+    padding-top: 10px;
+  }
+  iframe {
+    width: auto;
+  }
+  .footer-contact {
+    row-gap: 0;
+  }
+  .footer-contact .contact-us {
+    margin: 0;
+  }
+  .address {
+    font-size: 15px;
+  }
+}
 footer {
-  height: 50vh;
   font: 16px Roboto, sans-serif;
 }
 
@@ -479,6 +528,11 @@ a {
   border: none;
 }
 
+@media screen and (max-width: 800px) {
+  .c-tooltip::after {
+    content: none;
+  }
+}
 .about-header {
   background: url(/assets/img/about/background.jpg) no-repeat center center/cover;
   height: 80vh;

@@ -99,22 +99,22 @@ h3 {
     .nav {
       display: flex;
       column-gap: 40px;
-  
+
       &-item {
         color: $light-color;
-  
+
         &-link {
           font-size: 25px;
           transition: all 0.4s;
-  
+
           &:hover {
             color: $font-dark;
           }
-  
+
           &:focus {
             color: $font-dark;
           }
-  
+
           &::after {
             content: " ";
             height: 3px;
@@ -124,11 +124,11 @@ h3 {
             opacity: 0;
             transition: all 0.4s;
           }
-  
+
           &:hover::after {
             opacity: 1;
           }
-  
+
           &:focus::after {
             opacity: 1;
           }
@@ -181,7 +181,7 @@ h3 {
 
 // Main section - hero
 .hero {
-  background:  url("../assets/img/home/hero.jpg")  no-repeat center center/cover;
+  background: url("../assets/img/home/hero.jpg") no-repeat center center/cover;
 
   // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6))
   height: 100vh;
@@ -225,7 +225,7 @@ h3 {
   z-index: 10;
 }
 
-///// review section ////////////////
+///// review section ////////////////////////////////////////////
 .reviews {
   padding: 20px 30px;
   background-color: $second-primary-color;
@@ -243,6 +243,7 @@ h3 {
 }
 //////////////////////////
 .content {
+  font-size: 20px;
   width: 600px;
   height: 250px;
   &:nth-child(1) {
@@ -262,6 +263,7 @@ h3 {
     background-color: $card-color;
   }
 }
+
 /* slide rail flame */
 .wrap {
   overflow: hidden;
@@ -302,9 +304,8 @@ h3 {
 .content-hover {
   padding: 20px 40px;
   margin: 0 50px;
-  // color: $font-dark;
   color: $font-yellow;
-  font-size: 20px;
+
   display: flex;
   align-items: flex-start;
 
@@ -319,9 +320,33 @@ h3 {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .reviews {
+    height: 30vh;
+    h3 {
+      padding: 5px 0;
+      font-size: 20px;
+    }
+  }
+  .wrap {
+    height: auto;
+  }
+  .content {
+    width: 300px;
+    height: 150px;
+    font-size: 13px;
+  }
+  .content-hover {
+    padding: 20px 10px;
+    margin: 0 10px;
+    color: $font-yellow;
+  }
+}
+
 /////////////// Footer ///////////////////////
 
 footer {
+  height: 50vh;
   // background-color: $light-color;
   background-color: $primary-color;
   display: flex;
@@ -390,13 +415,38 @@ footer {
     column-gap: 5%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  footer {
+    h3 {
+      font-size: 20px;
+    }
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    .contact-us {
+      margin-top: 50px;
+    }
+    .footer-sns {
+      padding-top: 10px;
+    }
+  }
+  iframe {
+    width: auto;
+  }
+  .footer-contact {
+    row-gap: 0;
+    .contact-us {
+      margin: 0;
+    }
+  }
+
+  .address {
+    font-size: 15px;
+  }
 }
 
 /////////////////////
 footer {
-  // display: flex;
-  height: 50vh;
   font: 16px Roboto, sans-serif;
 }
 
@@ -502,8 +552,13 @@ a {
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
   border: none;
 }
+@media screen and (max-width: 800px) {
+  .c-tooltip::after {
+    content: none;
+  }
+}
 
-// About
+// About ///////////////////////////////////////////////////////////
 
 .about-header {
   background: url(/assets/img/about/background.jpg) no-repeat center
