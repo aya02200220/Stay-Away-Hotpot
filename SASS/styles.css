@@ -215,7 +215,7 @@ h3 {
 .reviews {
   padding: 20px 30px;
   background-color: #d23944;
-  height: 50vh;
+  min-height: 50vh;
 }
 .reviews h3 {
   padding: 10px 0;
