@@ -939,9 +939,9 @@ a {
     width: 270px;
     height: auto;
     top: 280%;
-    left: 45%;
+    left: 38%;
   }
-  .container__logo {
-    max-width: 70%;
+  .about-header {
+    background: url(/assets/img/about/background.jpg) no-repeat center center/contain;
   }
 }/*# sourceMappingURL=styles.css.map */
