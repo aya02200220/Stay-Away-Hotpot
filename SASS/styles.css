@@ -568,6 +568,9 @@ a {
 .about-header {
   background: url(/assets/img/about/background.jpg) no-repeat center center/cover;
   height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
 }
 .about-header::before {
   content: "";
@@ -936,6 +939,6 @@ a {
     width: 270px;
     height: auto;
     top: 280%;
-    left: 50%;
+    left: 33%;
   }
 }/*# sourceMappingURL=styles.css.map */

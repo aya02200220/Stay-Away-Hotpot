@@ -600,6 +600,8 @@ a {
   background: url(/assets/img/about/background.jpg) no-repeat center
     center/cover;
   height: 80vh;
+  object-fit: cover;
+  position: relative;
 
   &::before {
     content: "";
@@ -1036,6 +1038,6 @@ a {
     width: 270px;
     height: auto;
     top: 280%;
-    left: 50%;
+    left: 33%;
   }
 }
