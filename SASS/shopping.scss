@@ -209,6 +209,7 @@ h3 {
       display: flex;
       flex-direction: column;
       align-self: flex-end;
+      justify-content: center;
 
       h3 {
         font-size: 43px;
@@ -348,35 +349,87 @@ section {
   }
 }
 
-@media screen and (max-width: 700px) {
-  //   .card {
-  //     img {
-  //       width: 20%;
-  //       height: 20%;
-  //     }
-  //   }
+@media screen and (max-width: 1280px) {
+  section {
+    .category {
+      .title {
+        font-size: 60px;
+        margin: 50px;
+        padding-top: 100px;
+        text-align: center;
+        color: $light-color;
+      }
 
+      .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .card {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
   .app {
     .main {
-      display: flex;
-      flex-direction: column;
+      // display: flex;
+      // flex-direction: column;
+      padding-left: 0;
 
       .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: static;
+        width: 100%;
+        height: inherit;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         text-align: center;
-        margin: 0;
-        padding: 0;
+        // margin: 0;
+        padding: 90px 10px 10px;
 
         .sidebar {
-          padding: 0;
+          align-items: center;
+          display: flex;
+          flex-direction: unset;
+          justify-content: center;
+          // padding: 0;
+          h3 {
+            display: none;
+            // font-size: 20px;
+            // padding: 10px;
+          }
 
           .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
             border: 1px solid $dark-color;
             border-radius: 30px;
             margin: 5px;
-            padding: 10px 20px;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .app {
+    .main {
+      .wrapper {
+        .sidebar {
+          h3 {
+            display: none;
+          }
+
+          .section {
           }
         }
       }
