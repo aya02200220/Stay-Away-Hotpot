@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SASS/styles.css" />
     <link rel="stylesheet" href="SASS/shopping.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -51,20 +53,15 @@
         </nav>
         <div class="header-right">
           <li class="nav-item">
-            <a href="#" class="nav-link" title="Login"
-              ><i class="fa-solid fa-user"></i
-            ></a>
+            <a href="index.html" class="nav-item-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" title="Open Cart"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            <a href="shopping.html" class="nav-item-link">Shop</a>
           </li>
           <!-- <i class="fa-solid fa-user"></i> -->
           <!-- <i class="fa-solid fa-cart-shopping"></i> -->
         </div>
       </header>
-
       <div class="main">
         <div class="wrapper">
           <div class="sidebar">
@@ -322,6 +319,7 @@
         </section>
       </div>
     </div>
+    <script src="navScript.js"></script>
     <script>
       $(document).ready(function () {
         $(window).bind("scroll", function () {
