@@ -896,8 +896,10 @@ a {
 }
 @media (max-width: 750px) {
   .slider {
+    height: 30rem;
     .slide {
-      height: 50rem;
+      top: -35%;
+      // height: 50rem;
       .card-overlay {
         opacity: 1;
         height: 400px;
@@ -972,13 +974,11 @@ a {
     }
 
     &-middle {
-
       .hamburger {
         display: block;
       }
-  
+
       .hamburger.active {
-  
         .bar:nth-child(2) {
           opacity: 0;
         }
@@ -989,7 +989,7 @@ a {
           transform: translateY(-8px) rotate(-45deg);
         }
       }
-  
+
       .nav {
         position: fixed;
         left: -100%;
@@ -1000,18 +1000,17 @@ a {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-  
+
         &-item {
           margin: 16px 0;
         }
       }
-  
+
       .nav.active {
         left: 0;
       }
     }
   }
-
 }
 @media (max-width: 600px) {
   #timeline ul li {
