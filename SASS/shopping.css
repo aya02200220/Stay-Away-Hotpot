@@ -181,14 +181,15 @@ h3 {
 }
 .app .main .wrapper {
   display: flex;
-  width: 30%;
+  min-width: 30%;
   background-color: #e2c18a;
 }
 .app .main .sidebar {
-  font-size: 28px;
+  flex-shrink: 1;
+  font-size: 2vw;
   background-color: #e2c18a;
   color: #9b2132;
-  padding: 50px;
+  padding-left: 50px;
   margin-top: 50px;
   position: -webkit-sticky;
   position: sticky;
@@ -198,7 +199,7 @@ h3 {
   align-self: flex-end;
 }
 .app .main .sidebar h3 {
-  font-size: 40px;
+  font-size: 3vw;
   padding: 20px;
 }
 .app .main .sidebar a {
@@ -211,6 +212,7 @@ section .category .title {
   font-size: 60px;
   margin: 50px;
   padding-top: 100px;
+  text-align: center;
   color: #fff;
 }
 section .category .cards {
@@ -304,9 +306,26 @@ section .category .cards .card .btn-order:hover {
     left: 0;
   }
 }
-@media screen and (max-width: 600px) {
-  .card img {
-    width: 20%;
-    height: 20%;
+@media screen and (max-width: 700px) {
+  .app .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .app .main .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .app .main .wrapper .sidebar {
+    padding: 0;
+  }
+  .app .main .wrapper .sidebar .section {
+    border: 1px solid #1a1a1a;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 10px 20px;
   }
 }/*# sourceMappingURL=shopping.css.map */

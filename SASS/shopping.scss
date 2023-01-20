@@ -186,15 +186,16 @@ h3 {
 
     .wrapper {
       display: flex;
-      width: 30%;
+      min-width: 30%;
       background-color: #e2c18a;
     }
 
     .sidebar {
-      font-size: 28px;
+      flex-shrink: 1;  
+      font-size: 2vw;
       background-color: $font-yellow;
       color: $primary-color;
-      padding: 50px;
+      padding-left: 50px;
       margin-top: 50px;
       position: sticky;
       bottom: 500px;
@@ -203,7 +204,7 @@ h3 {
       align-self: flex-end;
 
       h3 {
-        font-size: 40px;
+        font-size: 3vw;
         padding: 20px;
       }
 
@@ -222,6 +223,7 @@ section {
       font-size: 60px;
       margin: 50px;
       padding-top: 100px;
+      text-align: center;
       color: $light-color;
     }
 
@@ -338,11 +340,39 @@ section {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .card {
-    img {
-      width: 20%;
-      height: 20%;
+@media screen and (max-width: 700px) {
+//   .card {
+//     img {
+//       width: 20%;
+//       height: 20%;
+//     }
+//   }
+
+.app {
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+
+            .sidebar {
+                padding: 0;
+
+                .section {
+                    border: 1px solid $dark-color;
+                    border-radius: 30px;
+                    margin: 5px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+
     }
-  }
+}
 }
