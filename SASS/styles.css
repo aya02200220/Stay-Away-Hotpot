@@ -830,8 +830,11 @@ a {
   }
 }
 @media (max-width: 750px) {
+  .slider {
+    height: 30rem;
+  }
   .slider .slide {
-    height: 50rem;
+    top: -35%;
   }
   .slider .slide .card-overlay {
     opacity: 1;
