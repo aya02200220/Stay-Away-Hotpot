@@ -568,7 +568,8 @@ a {
 .about-header {
   background: url(/assets/img/about/background.jpg) no-repeat center center/cover;
   height: 80vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
 }
 .about-header::before {
@@ -936,10 +937,10 @@ a {
     border-color: transparent rgb(154, 151, 151) transparent transparent;
   }
   .about__img {
-    width: 270px;
+    width: 120px;
     height: auto;
     top: 280%;
-    left: 50%;
+    left: 60%;
   }
   .container__logo {
     max-width: 70%;
